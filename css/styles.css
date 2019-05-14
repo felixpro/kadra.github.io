@@ -1,0 +1,285 @@
+body,
+html {
+  height: 100%; }
+
+.thankyou_message {
+  font-size: 14px;
+  padding: 15px 20px;
+  color: #fff;
+  position: fixed;
+  bottom: 0vw;
+  width: 100%;
+  left: 0;
+  background: #666633;
+  display: none; }
+
+@font-face {
+  src: url(fonts/OpenSans-Italic.ttf);
+  font-family: OpenSans;
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  src: url(Poppins-Regular.ttf);
+  font-family: Poppins;
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  src: url(Poppins-Regular.ttf);
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal; }
+header {
+  background-image: url("../img/hero_image.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+  header .hero_image img {
+    width: 100%; }
+  header .description_hide_box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  header .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    header .logo img {
+      position: relative;
+      top: 120px; }
+      @media (max-width: 320px) {
+        header .logo img {
+          top: 30px; } }
+  header .description_container {
+    width: 100%; }
+    header .description_container h1 {
+      margin: 0;
+      font-family: Poppins;
+      font-size: 65.5px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 0.98;
+      letter-spacing: normal;
+      text-align: center;
+      color: #fafdff; }
+      @media (max-width: 1350px) {
+        header .description_container h1 {
+          margin-bottom: 20px; } }
+      @media (max-width: 1300px) {
+        header .description_container h1 {
+          font-size: 50px; } }
+      @media (max-width: 992px) {
+        header .description_container h1 {
+          font-size: 40px;
+          padding: 0 10px;
+          line-height: 1.3; } }
+      @media (max-width: 500px) {
+        header .description_container h1 {
+          font-size: 30px; } }
+    header .description_container p {
+      font-family: Poppins;
+      font-size: 20.5px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.6;
+      letter-spacing: 0.8px;
+      text-align: center;
+      color: #f7fcff; }
+      @media (max-width: 992px) {
+        header .description_container p {
+          font-size: 14px;
+          padding: 0 10px; } }
+    header .description_container .form_container {
+      width: 100%;
+      padding-top: 85px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      @media (min-width: 320px) {
+        header .description_container .form_container {
+          padding-top: 20px; } }
+      header .description_container .form_container [contenteditable].form-control:focus,
+      header .description_container .form_container [type=email].form-control:focus,
+      header .description_container .form_container [type=password].form-control:focus,
+      header .description_container .form_container [type=tel].form-control:focus,
+      header .description_container .form_container [type=text].form-control:focus,
+      header .description_container .form_container input.form-control:focus,
+      header .description_container .form_container input[type=email]:focus,
+      header .description_container .form_container input[type=number]:focus,
+      header .description_container .form_container input[type=password]:focus,
+      header .description_container .form_container input[type=text]:focus,
+      header .description_container .form_container textarea.form-control:focus,
+      header .description_container .form_container button:focus,
+      header .description_container .form_container textarea:focus {
+        box-shadow: none; }
+      header .description_container .form_container .col-lg-5 {
+        display: flex;
+        justify-content: center; }
+      header .description_container .form_container .or_text {
+        width: 100%; }
+        header .description_container .form_container .or_text p {
+          text-align: center;
+          margin: 10px 0; }
+          @media (min-width: 992px) {
+            header .description_container .form_container .or_text p {
+              margin-bottom: 30px; } }
+      header .description_container .form_container .input-group {
+        background: none;
+        float: left;
+        margin-left: 0;
+        width: 300px;
+        height: 47px;
+        border-radius: 23.5px; }
+        header .description_container .form_container .input-group .box_effect {
+          opacity: 0.22;
+          background-color: #e1e1e1;
+          width: 100%;
+          height: 100%;
+          border-radius: 23px;
+          position: absolute; }
+        header .description_container .form_container .input-group input {
+          border: none;
+          background: none;
+          color: #fff;
+          outline: none;
+          border-radius: 23px; }
+          header .description_container .form_container .input-group input::placeholder {
+            color: #fff;
+            font-family: OpenSans;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: italic;
+            font-stretch: normal;
+            line-height: 1.86;
+            letter-spacing: normal;
+            text-align: center;
+            color: #fcfcfc; }
+          header .description_container .form_container .input-group input:-ms-input-placeholder {
+            color: red;
+            font-family: OpenSans;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: italic;
+            font-stretch: normal;
+            line-height: 1.86;
+            letter-spacing: normal;
+            text-align: center;
+            color: #fcfcfc; }
+          header .description_container .form_container .input-group input::-ms-input-placeholder {
+            color: red;
+            font-family: OpenSans;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: italic;
+            font-stretch: normal;
+            line-height: 1.86;
+            letter-spacing: normal;
+            text-align: center;
+            color: #fcfcfc; }
+          header .description_container .form_container .input-group input:active, header .description_container .form_container .input-group input:focus, header .description_container .form_container .input-group input:hover, header .description_container .form_container .input-group input:visited {
+            border: none;
+            outline: none;
+            text-decoration: none; }
+        header .description_container .form_container .input-group button {
+          background: none;
+          border: none;
+          outline: none;
+          border: 0; }
+          header .description_container .form_container .input-group button:active, header .description_container .form_container .input-group button:focus, header .description_container .form_container .input-group button:hover, header .description_container .form_container .input-group button:visited {
+            border: none;
+            outline: none;
+            text-decoration: none; }
+  header .mouse {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20px; }
+    @media (min-width: 320px) {
+      header .mouse {
+        bottom: 10px; } }
+
+footer {
+  width: 100%;
+  background-color: #252525;
+  color: #fff;
+  font-weight: lighter; }
+  footer .container {
+    padding-top: 50px; }
+  footer .subscribe_colum p {
+    margin-top: 10px;
+    width: 300px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff; }
+  footer .subscribe_colum img {
+    padding-bottom: 39px; }
+  footer .subscribe_colum .button_subscribe {
+    margin-top: 30px;
+    margin-top: 30px;
+    background: none;
+    border: solid 1px #fff;
+    border-radius: 8px;
+    outline: none;
+    height: 50px;
+    width: 231px;
+    color: #fff; }
+  footer .contact_info h2 {
+    width: 150px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 4.44;
+    letter-spacing: normal;
+    text-align: left; }
+  footer .contact_info .adress {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left; }
+  footer .contact_info .network_icons {
+    display: flex;
+    width: 107px; }
+    footer .contact_info .network_icons a:active, footer .contact_info .network_icons a:focus, footer .contact_info .network_icons a:hover, footer .contact_info .network_icons a:visited {
+      border: none;
+      outline: none;
+      text-decoration: none; }
+    footer .contact_info .network_icons img {
+      margin-right: 20px; }
+  footer .footer_division {
+    height: 0.1px;
+    background-color: #888890;
+    margin-top: 50px; }
+  footer .register {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-top: 15px;
+    margin: 0;
+    height: 16px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */
