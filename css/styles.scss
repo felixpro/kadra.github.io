@@ -1,44 +1,20 @@
 body,
 html {
   height: 100%;
-
+  background: black;
 }
 
 .thankyou_message {
-
   font-size: 14px;
   padding: 15px 20px;
   color: #fff;
   position: fixed;
-  bottom: 0vw;
+  bottom: 0;
   width: 100%;
   left: 0;
-  background:  #666633
-;
+  background: #666633;
   display: none;
 }
-
-@font-face {
-  src: url(fonts/OpenSans-Italic.ttf);
-  font-family: OpenSans;
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  src: url(Poppins-Regular.ttf);
-  font-family: Poppins;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  src: url(Poppins-Regular.ttf);
-  font-family: Poppins;
-  font-weight: 500;
-  font-style: normal;
-}
-
 
 header {
   background-image: url("../img/hero_image.jpg");
@@ -58,8 +34,16 @@ header {
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
+    align-items: center;
+    @media (max-height:630px) {
+      align-items: none;
+      top: 20px;
+    }
+    @media (max-height:630px) {
+      align-items: none;
+      top: 20px;
+    }
   }
 
   .logo {
@@ -71,6 +55,9 @@ header {
       position: relative;
       top: 120px;
       @media (max-width:320px) {
+        top: 5px;
+      }
+      @media (max-height:600px) {
         top: 30px;
       }
     }
@@ -81,7 +68,7 @@ header {
 
     h1 {
       margin: 0;
-      font-family: Poppins;
+      font-family: 'Poppins', sans-serif;
       font-size: 65.5px;
       font-weight: 500;
       font-style: normal;
@@ -107,7 +94,8 @@ header {
     }
 
     p {
-      font-family: Poppins;
+      margin-top: 15px;
+      font-family: 'Poppins', sans-serif;
       font-size: 20.5px;
       font-weight: normal;
       font-style: normal;
@@ -137,15 +125,15 @@ header {
       [type=password].form-control:focus,
       [type=tel].form-control:focus,
       [type=text].form-control:focus,
+      button:focus,
       input.form-control:focus,
       input[type=email]:focus,
       input[type=number]:focus,
       input[type=password]:focus,
       input[type=text]:focus,
       textarea.form-control:focus,
-      button:focus,
       textarea:focus {
-        box-shadow:none;
+        box-shadow: none;
       }
 
       .col-lg-5 {
@@ -191,7 +179,7 @@ header {
 
           &::placeholder {
             color: #fff;
-            font-family: OpenSans;
+            font-family: 'Open Sans', sans-serif;
             font-size: 14px;
             font-weight: 300;
             font-style: italic;
@@ -204,7 +192,7 @@ header {
 
           &:-ms-input-placeholder {
             color: red;
-            font-family: OpenSans;
+            font-family: 'Open Sans', sans-serif;
             font-size: 14px;
             font-weight: 300;
             font-style: italic;
@@ -217,7 +205,7 @@ header {
 
           &::-ms-input-placeholder {
             color: red;
-            font-family: OpenSans;
+            font-family: 'Open Sans', sans-serif;
             font-size: 14px;
             font-weight: 300;
             font-style: italic;
@@ -266,13 +254,16 @@ header {
     @media (min-width:320px) {
       bottom: 10px;
     }
+    @media (max-height:490px) {
+      display: none;
+    }
   }
 }
 //Header
 
 footer {
   .container {
-    padding-top:50px;
+    padding-top: 50px;
   }
   width: 100%;
   background-color: #252525;
@@ -283,15 +274,15 @@ footer {
     p {
       margin-top: 10px;
       width: 300px;
-      font-family: Poppins;
-font-size: 14px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: normal;
-letter-spacing: normal;
-text-align: left;
-color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #fff;
     }
 
     img {
@@ -301,7 +292,6 @@ color: #fff;
     .button_subscribe {
       margin-top: 30px;
       margin-top: 30px;
-
       background: none;
       border: solid 1px #fff;
       border-radius: 8px;
@@ -315,7 +305,7 @@ color: #fff;
   .contact_info {
     h2 {
       width: 150px;
-      font-family: Poppins;
+      font-family: 'Poppins', sans-serif;
       font-size: 18px;
       font-weight: normal;
       font-style: normal;
@@ -326,7 +316,7 @@ color: #fff;
     }
 
     .adress {
-      font-family: Poppins;
+      font-family: 'Poppins', sans-serif;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -336,11 +326,10 @@ color: #fff;
       text-align: left;
     }
 
-
-
     .network_icons {
       display: flex;
       width: 107px;
+
       a {
         &:active,
         &:focus,
@@ -351,6 +340,7 @@ color: #fff;
           text-decoration: none;
         }
       }
+
       img {
         margin-right: 20px;
       }
@@ -364,20 +354,15 @@ color: #fff;
   }
 
   .register {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 50px;
-    padding-top: 15px;
+    padding: 15px 10px 50px;
     margin: 0;
     height: 16px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     letter-spacing: normal;
     text-align: center;
-
-
   }
 }
